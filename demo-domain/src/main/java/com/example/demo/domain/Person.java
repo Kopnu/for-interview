@@ -1,0 +1,29 @@
+package com.example.demo.domain;
+
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+/**
+ * Person entity.
+ *
+ * @author Sergei_Konilov
+ */
+@Data
+@Entity
+public class Person {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_default_seq")
+    @SequenceGenerator(name = "person_default_seq", sequenceName = "person_default_seq")
+    private Long id;
+
+    private String name;
+
+    private Integer age;
+
+}
