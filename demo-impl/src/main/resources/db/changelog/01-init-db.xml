@@ -22,7 +22,7 @@
     </changeSet>
 
     <changeSet id="add-person-data" author="Sergei_Kornilov">
-        <loadData tableName="person" file="db/changelog/person.csv"/>
+        <loadData tableName="person" file="./initdata/person.csv" relativeToChangelogFile="true"/>
     </changeSet>
 
 </databaseChangeLog>
