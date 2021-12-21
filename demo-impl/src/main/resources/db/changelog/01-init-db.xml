@@ -15,7 +15,7 @@
             <column name="name" type="VARCHAR(256)"/>
             <column name="age" type="BIGINT"/>
         </createTable>
-        <createSequence sequenceName="person_default_seq" incrementBy="50"/>
+        <createSequence sequenceName="person_default_seq" incrementBy="1" startValue="5163"/>
         <addPrimaryKey tableName="person"
                        columnNames="id"
                        constraintName="person_pk"/>
