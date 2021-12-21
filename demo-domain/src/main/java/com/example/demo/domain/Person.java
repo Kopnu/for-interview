@@ -1,6 +1,7 @@
 package com.example.demo.domain;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ import javax.persistence.SequenceGenerator;
  */
 @Data
 @Entity
+@Accessors(chain = true)
 public class Person {
 
     @Id
